@@ -11,6 +11,11 @@
     width: 100%;
     z-index: 10000;
 
+    &.colorzilla {
+        background: grey !important;
+        opacity: 0.5;
+    }
+
     // .top-header start
     .top-header {
         padding: 15px;
@@ -74,9 +79,15 @@
     // ----------------
     // NAVBAR START
     .navbar {
+        transition: .4s linear;
+
+        &.colorzilla {
+            background: black;
+            opacity: 0.8;
+        }
 
         cursor: pointer;
-        z-index: 20;
+        z-index: 2000;
         padding: 20px;
 
         .mainDropdown {
@@ -185,7 +196,7 @@
 // SECTION1 START
 #section1 {
     width: 100%;
-    height: 600px;
+    height: 700px;
     background-image: url(../photo/background1.jpg);
     background-position: center;
     background-size: contain;
@@ -225,8 +236,9 @@
         background-position: center;
         background-size: cover;
         padding: 60px 0 65px 0;
-        
+
         border-radius: 10px;
+
         .see {
             opacity: 0;
             transition: .3s;
@@ -287,7 +299,7 @@
 // ------------
 .holiday2 {
     border-radius: 10px;
-padding: 60px 0;
+    padding: 60px 0;
     background-image: url(../photo/section2\ 2.jpg);
     background-repeat: no-repeat;
     background-position: center;
@@ -311,13 +323,14 @@ padding: 60px 0;
         font-size: 15px;
     }
 
-   
+
 
     .holiday-middle {
         transform: translateY(0px);
         transition: .3s;
     }
- .see2 {
+
+    .see2 {
         opacity: 0;
         transition: .3s;
         color: #ffffff;
@@ -326,8 +339,9 @@ padding: 60px 0;
             color: #5693FA;
             background-color: white;
         }
-        
+
     }
+
     &:hover {
         .holiday-middle {
 
@@ -349,10 +363,11 @@ padding: 60px 0;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+
     i {
         color: white;
         font-size: 35px;
-  
+
     }
 
     h2 {
@@ -366,10 +381,12 @@ padding: 60px 0;
         color: white;
         font-size: 15px;
     }
+
     .holiday-middle {
         transform: translateY(0px);
         transition: .3s;
     }
+
     .see3 {
         opacity: 0;
         transition: .3s;
@@ -379,8 +396,9 @@ padding: 60px 0;
             color: #5693FA;
             background-color: white;
         }
-        
+
     }
+
     &:hover {
         .holiday-middle {
 
@@ -390,7 +408,7 @@ padding: 60px 0;
         .see3 {
             opacity: 1;
             border: 1px solid white;
-       
+
         }
     }
 
@@ -401,33 +419,197 @@ padding: 60px 0;
 // SECTION2 END
 // SECTION3 START
 // --------------
-#section3{
-    .imgBox{
+#section3 {
+    .imgBox {
         width: 30%;
         margin: 12px 10px;
-        border-radius: 5px;
         position: relative;
         overflow: hidden;
-        .imgText{
+
+        .imgText {
+            hr {
+                transition: .3s linear;
+                width: 18%;
+                margin: auto;
+                border: 1px solid white;
+            }
+
             position: absolute;
             top: 50%;
             left: 50%;
-            transform: translate(-50%,-50%);
-            h4{
+            transform: translate(-50%, -50%);
+
+            h4 {
                 color: #FFf;
                 font-weight: bold;
                 font-size: 20px;
             }
         }
-        &:hover{
-            img{
+
+        &:hover {
+            .img-list {
+                transform: translateY(-30px);
+                opacity: 1;
+
+            }
+
+            hr {
+                width: 40%;
+            }
+
+          
+            img {
+                border-radius: 5px;
                 transform: scale(1.2);
+                transition: .3s ;
             }
         }
-        img{
+       
+
+            img {
+                transition: .3s;
             transition: all .4s;
             width: 100% !important;
         }
+
+        .img-list {
+            transform: translateY(0px);
+            z-index: 15;
+            transition: .3s;
+            opacity: 0;
+
+
+
+
+        }
+
+        a {
+            font-size: 13px;
+            cursor: pointer;
+            text-decoration: none;
+            color: white;
+            text-align: center !important;
+            padding: 15px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            ;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
     }
+}
+.sekil-alt{
+    overflow: hidden;
     
+}
+// SECTION3 END
+// -----------------
+// SECTION4 START
+// ------------------
+
+#section4 {
+    .slider {
+
+        .slick-prev{
+            left: -60px;
+            z-index: 15;
+
+        }
+
+.slick-prev:before{
+content: "⇚";
+    color: #90929D;
+    z-index: 15;
+    font-size: 70px;
+
+}
+.slick-next:before{
+content: "⇛";
+    color: #90929D;
+    position: absolute;
+    z-index: 15;
+    font-size: 70px !important;
+}
+.slick-next{
+    z-index: 15;
+color: black !important;}
+        .slider-item {
+            overflow: hidden;
+            position: relative;
+  padding: 12px;
+        
+            &:hover {
+                img {
+                    min-width: 100%;
+                    transform: scale(1.2);
+                    transition: all .3s ;
+                }
+            }
+            .sekil {
+                position: relative;
+                overflow: hidden;
+                .red11{
+                    background-color: #CC0033;
+                    position: absolute;
+                    width: 80px;
+                    height: 48px;
+                    transform: rotate(45deg);
+                    right: -30px;
+                    top: -13px;
+                    line-height: 65px;
+                    text-align: center;
+                    color: #fff;
+                    font-size: 15px;
+                    z-index: 8;
+                }
+            }
+            .mini-sekil{
+                position: absolute;
+                background-color: #19A1E5;
+                color: white;
+                padding: 4px 10px;
+                top: 34px;
+                left: 13px;
+
+            }
+            .heart-icon{
+                position: absolute;
+                color: #FFFFFF;
+                top: 34px;
+                right: 33px;
+                font-size: 32px;
+        
+            }
+  
+            img {
+                transition: .3s;
+            }
+            .slide-content{
+                
+                border: 1px solid #DFDFDF;
+                p{
+                    color: #5E6D77;
+                }
+                .picon{
+                    font-size: 17px;
+                    color: #5E6D77;
+                    padding-left: 15px;
+                    i{
+                        color: #FFDC00;
+                    }
+                }
+                h5{
+                    color: #1A2B50;
+                    padding-left: 15px;
+                }
+                span{
+                    color: #5E6D77;
+                    i{
+                        padding-right: 8px;
+                    }
+                }
+            }
+        }
+    }
 }
