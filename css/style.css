@@ -52,6 +52,7 @@
     #header .navbar .mainDropdown:hover .pages-text {
       display: block; }
     #header .navbar .mainDropdown li {
+      padding: 10px;
       color: #6E7C85; }
       #header .navbar .mainDropdown li:hover {
         color: #5191FA; }
@@ -66,7 +67,7 @@
         visibility: visible; }
       #header .navbar .all-text .bigDropped .mainbigDropdown {
         opacity: 0;
-        padding: 25px;
+        padding: 70px;
         visibility: hidden;
         position: absolute;
         left: 0;
@@ -74,15 +75,16 @@
         width: 100%;
         background: white;
         color: #000;
+        z-index: 10;
         transform: translateY(20px);
         transition: .3s ease-in-out; }
         #header .navbar .all-text .bigDropped .mainbigDropdown ul {
           list-style: none; }
           #header .navbar .all-text .bigDropped .mainbigDropdown ul li {
             border-bottom: 1px solid black;
-            padding-top: 4px;
+            padding-top: 10px;
             color: #8D979E;
-            font-size: 14px;
+            font-size: 16px;
             font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; }
             #header .navbar .all-text .bigDropped .mainbigDropdown ul li:hover {
               color: #5192FA; }
@@ -280,9 +282,6 @@
 .sekil-alt {
   overflow: hidden; }
 
-#section4 .slider .slick-prev {
-  left: -60px;
-  z-index: 15; }
 #section4 .slider .slick-prev:before {
   content: "⇚";
   color: #90929D;
@@ -404,6 +403,213 @@
   #footer p {
     color: #5E6D77;
     font-size: 18px; }
+
+#section-blog1 {
+  width: 100%;
+  height: 400px;
+  background-image: url(https://mixmap.travelerwp.com/wp-content/uploads/2018/12/united.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  top: -15px; }
+  #section-blog1 .hi-there {
+    position: absolute;
+    top: 40%;
+    transform: translateY(19%); }
+    #section-blog1 .hi-there h1 {
+      font-weight: 500;
+      font-size: 54px;
+      color: #FFF; }
+    #section-blog1 .hi-there p {
+      padding-top: 7px;
+      font-size: 18px;
+      color: #FFF;
+      font-family: 'Poppins', sans-serif !important;
+      font-weight: 400; }
+
+#section-blog2 {
+  padding: 80px;
+  /* Styles for wrapping the search box */ }
+  #section-blog2 .img-blog2 {
+    position: relative; }
+  #section-blog2 .parks span {
+    position: absolute;
+    background-color: #F9CA24;
+    color: white;
+    padding: 4px 10px;
+    top: 34px;
+    cursor: pointer;
+    border-radius: 5px;
+    left: 20px; }
+  #section-blog2 .pure span {
+    color: #1A2B48;
+    font-weight: 600;
+    padding-left: 15px;
+    padding: 12px; }
+  #section-blog2 .pure p {
+    padding-top: 15px;
+    color: #737FB0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; }
+  #section-blog2 .pure a {
+    font-weight: 700;
+    font-size: 15px;
+    color: #679EF8; }
+  #section-blog2 .main {
+    width: 100%;
+    margin: 50px auto; }
+    #section-blog2 .main h4 {
+      padding-top: 12px; }
+    #section-blog2 .main hr {
+      width: 30%; }
+    #section-blog2 .main p {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      padding-top: 15px;
+      font-size: 14px;
+      color: #5E6D77; }
+    #section-blog2 .main .beach a {
+      color: black;
+      font-size: 11px !important;
+      color: #1A2B48 !important;
+      font-weight: 500;
+      background: #F7F6F6 !important;
+      border-radius: 3px;
+      padding: 9px 20px;
+      display: inline-block;
+      margin-bottom: 10px;
+      margin-right: 10px;
+      text-transform: uppercase; }
+
+/* Bootstrap 4 text input with search icon */
+.has-search .form-control {
+  padding-left: 2.375rem; }
+
+.has-search .form-control-feedback {
+  position: absolute;
+  display: block;
+  width: 80%;
+  height: 2.375rem;
+  text-align: center;
+  pointer-events: none;
+  color: #aaa; }
+
+#section5 {
+  color: #e2e2e2;
+  padding: 80px; }
+  #section5 h4 {
+    font-size: 35px;
+    margin-top: 0;
+    margin-bottom: 5px;
+    font-weight: 500;
+    line-height: 1.1;
+    color: #1A2B48; }
+  #section5 p {
+    color: #5E6D77;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 17px; }
+  #section5 .single {
+    max-width: 650px;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    z-index: 5; }
+  #section5 .single .form-control {
+    height: 50px;
+    background: rgba(255, 255, 255, 0.6);
+    border-color: transparent; }
+  #section5 .single .form-control:focus {
+    box-shadow: none;
+    border-color: black; }
+  #section5 .home-newsletter .single .btn {
+    min-height: 50px;
+    border-radius: 0 20px 20px 0;
+    background: #5191FA;
+    color: #fff; }
+
+#footer {
+  padding: 80px; }
+  #footer h4 {
+    font-size: 14px;
+    color: #1A354E; }
+  #footer hr {
+    width: 50%;
+    border: 1px solid #5191FA; }
+  #footer li a {
+    margin-bottom: 25px;
+    font-size: 16px;
+    font-weight: 500;
+    display: block;
+    color: #1A2B48; }
+  #footer p {
+    color: #5E6D77;
+    font-size: 18px; }
+
+#section-contact1 {
+  width: 100%;
+  height: 400px;
+  background-image: url(https://mixmap.travelerwp.com/wp-content/uploads/2018/12/gallary_4-1.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  top: -35px; }
+  #section-contact1 .hi-there {
+    position: absolute;
+    top: 40%;
+    transform: translateY(-40%); }
+    #section-contact1 .hi-there h1 {
+      font-weight: 500;
+      font-size: 54px;
+      color: #FFF; }
+    #section-contact1 .hi-there p {
+      padding-top: 7px;
+      font-size: 18px;
+      color: #FFF;
+      font-family: 'Poppins', sans-serif !important;
+      font-weight: 400; }
+
+#section-contact2 {
+  padding: 50px; }
+  #section-contact2 h3 {
+    font-size: 24px;
+    color: #1A2B48;
+    margin-top: 0; }
+  #section-contact2 p {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #5E6D77;
+    font-size: 16px; }
+  #section-contact2 hr {
+    width: 50%;
+    border: 1px solid #999999; }
+  #section-contact2 input {
+    display: flex;
+    width: 80%;
+    margin-top: 15px;
+    border-radius: 1px; }
+  #section-contact2 textarea {
+    margin-top: 15px;
+    border-radius: 5px; }
+  #section-contact2 .btn-contact {
+    background-color: #5191FA; }
+  #section-contact2 .ltd {
+    position: absolute;
+    top: 50%;
+    margin-top: -185px;
+    margin-left: -130px;
+    background: #FA5636;
+    padding: 30px;
+    width: 70%; }
+    #section-contact2 .ltd h3 {
+      color: white; }
+    #section-contact2 .ltd .ltd-items {
+      padding-top: 100px; }
+      #section-contact2 .ltd .ltd-items p {
+        padding: 4px;
+        font-size: 16px;
+        color: #FFF;
+        margin-bottom: 5px;
+        width: 100%;
+        font-family: initial; }
 
 @media (max-width: 768px) {
   #section1 {
